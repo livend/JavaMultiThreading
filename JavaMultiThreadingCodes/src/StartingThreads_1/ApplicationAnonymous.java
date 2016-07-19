@@ -26,7 +26,9 @@ public class ApplicationAnonymous {
 
                     try {
                         Thread.sleep(100);
-                    } catch (InterruptedException ignored) {}
+                    } catch (InterruptedException ignored) {
+                        //ignored.printStackTrace();
+                    }
                 }
             }
         });

@@ -74,9 +74,11 @@ public class Worker {
          * code stops until Threads terminate.
          */
         try {
-            thread1.join();
+            thread1.join();                //主线程等待子线程执行完后在执行下面的sysout
             thread2.join();
-        } catch (InterruptedException ignored) {}
-        System.out.println("Count is: " + count);
+        } catch (InterruptedException ignored) {
+
+        }
+        System.out.println("Count is: " + count);     //用join保证保证前面两个线程已经执行完成
     }
 }

@@ -20,7 +20,7 @@ import java.util.Scanner;
 
 class Processor extends Thread {
 
-    private volatile boolean running = true;
+    private volatile boolean running = true;     //volatile关键字的作用   ---不同线程访问能被立即看到修改
 
     public void run() {
         while (running) {
@@ -46,7 +46,7 @@ public class App {
         pro.start();
         // Wait for the enter key
         System.out.println("Enter something to stop the thread,\nVolatile variable running will be forced to true :");
-        new Scanner(System.in).nextLine();
-        pro.shutdown();
+        new Scanner(System.in).nextLine();            //主线程等待用户输入
+        pro.shutdown();                               //轮询，线程停止
     }
 }

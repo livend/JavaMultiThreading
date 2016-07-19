@@ -24,7 +24,7 @@ class Runner extends Thread {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                //e.printStackTrace();
             }
         }
     }
@@ -34,9 +34,11 @@ public class ApplicationExtends {
 
     public static void main(String[] args) {
         Runner runner1 = new Runner();
+        runner1.setName("runner1");
         runner1.start();
 
         Runner runner2 = new Runner();
+        runner2.setName("runner2");
         runner2.start();
     }
 

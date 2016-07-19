@@ -1,0 +1,21 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# add
+*.classpath
+/.settings
+/.myeclipse
+*.project
+*.mymetadata
+/build
+/.idea
+/out
+*.impl
+/classes
+/bin/
+/.gradle
+.idea/

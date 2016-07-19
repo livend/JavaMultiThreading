@@ -41,3 +41,7 @@ public class ApplicationRunnable {
     }
 
 }
+
+/**
+ * 线程的来年各种实现方式 继承Thread和实现Runnable接口
+ */
