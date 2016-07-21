@@ -1,8 +1,8 @@
 package mytest_0;
 
 /**
- * @author liwen.
- * @date 2016/7/20 18:05.
+ * @author liven
+ * @date 2016/7/20 21:45
  */
 public class ThreadActiveCount {
 
